@@ -1,7 +1,7 @@
 package ar.edu.tecnica;
 
 /**
- * @author NOMBRE Y APELLIDO ALUMNO
+ * @author Alison Ramos
  * 
  */
 
