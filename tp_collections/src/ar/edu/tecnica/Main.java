@@ -48,19 +48,18 @@ public class Main {
         HashSet<Integer> numeros = new HashSet<>();
         numeros.add(1);
         numeros.add(2);
-        numeros.add(2); // Duplicado, no se añadirá
-        
+        numeros.add(2);        
         System.out.println("HashSet: " + numeros);
     }
 
     public static void ejemploQueue() {
         // PriorityQueue
         PriorityQueue<Integer> numeros = new PriorityQueue<>();
-        numeros.add(3);
-        numeros.add(1);
         numeros.add(2);
+        numeros.add(3);
+        numeros.add(4);
         
-        System.out.println("PriorityQueue (poll): " + numeros.poll()); // Debería devolver 1 (el elemento más pequeño)
+        System.out.println("PriorityQueue (poll): " + numeros.poll());
     }
 
     public static void ejemploDeque() {
@@ -88,7 +87,7 @@ public class Main {
         numeros.add(3);
         numeros.add(1);
         
-        System.out.println("TreeSet: " + numeros); // Ordenado
+        System.out.println("TreeSet: " + numeros); 
     }
 
     public static void loadSortedMap() {
@@ -97,7 +96,7 @@ public class Main {
         numeros.put("B", 2);
         numeros.put("A", 1);
         
-        System.out.println("TreeMap: " + numeros); // Ordenado por clave
+        System.out.println("TreeMap: " + numeros);
     }
 
     public static void ejemploSort() {
@@ -106,7 +105,7 @@ public class Main {
         list.add(1);
         list.add(2);
 
-        Collections.sort(list); // Ordena en orden ascendente
+        Collections.sort(list); 
         
        System.out.println("Sorted List: " + list);
     }
@@ -117,8 +116,7 @@ public class Main {
        list.add(2);
        list.add(3);
 
-       Collections.reverse(list); // Invierte la lista
-
+       Collections.reverse(list);
        System.out.println("Reversed List: " + list);
     }
 
@@ -128,8 +126,7 @@ public class Main {
        list.add(2);
        list.add(3);
 
-       Collections.shuffle(list); // Mezcla aleatoriamente la lista
-
+       Collections.shuffle(list);
        System.out.println("Shuffled List: " + list);
     }
 
@@ -138,15 +135,14 @@ public class Main {
        list.add(1);
        list.add(2);
 
-       Collections.swap(list, 0, 1); // Intercambia elementos en los índices 0 y 1
+       Collections.swap(list, 0, 1); 
 
        System.out.println("Swapped List: " + list);
     }
 
     public static void ejemploFill() {
-       ArrayList<Integer> list = new ArrayList<>(Collections.nCopies(5, 0)); // Crea una lista de tamaño 5 llena de ceros
-
-       Collections.fill(list, 9); // Llena toda la lista con 9
+       ArrayList<Integer> list = new ArrayList<>(Collections.nCopies(5, 0)); 
+       Collections.fill(list, 9); 
 
        System.out.println("Filled List: " + list);
     }
@@ -177,3 +173,4 @@ public class Main {
                """ + max);
     }
 }
+
