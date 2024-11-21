@@ -66,8 +66,8 @@ public class Main {
         // ArrayDeque
         ArrayDeque<Integer> numeros = new ArrayDeque<>();
         numeros.add(1);
-        numeros.addFirst(0); // Añadir al frente
-        numeros.addLast(2);  // Añadir al final
+        numeros.addFirst(0); 
+        numeros.addLast(2);  
         
         System.out.println("ArrayDeque: " + numeros);
     }
